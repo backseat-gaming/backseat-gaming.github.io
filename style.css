@@ -1,6 +1,6 @@
 
 html, body {
-    background-color: #cccdce; 
+    background-color: #595959; 
     font-family: 'Montserrat', 
     sans-serif; 
     margin: 0; 
@@ -9,7 +9,7 @@ html, body {
 
 /* Initial menu */
 .menu {
-  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+  background: #2C2C2C; 
   left: -285px;  /* start off behind the scenes */
   height: 100%;
   position: fixed;
@@ -56,14 +56,14 @@ html, body {
 }
 
 .header {
-    background-color:#fff;
+    background-color:#CC3300;
     height: 140px;
     text-align: center;
+    color: #000;
 } 
 
 .header li {
     display: inline;
-    color: #31363d;
     margin: 0 auto;
     position: relative;
     padding: 0px 0px 10px 30px;
@@ -73,7 +73,7 @@ html, body {
 }
 
 .header h1 {
-    color: #31363d;
+    font-weight: bold;
     font-size: 32px;
     margin: 0 auto;
     position: relative;
