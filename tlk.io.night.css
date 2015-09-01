@@ -177,8 +177,8 @@
 }
 
 .message-input.message-input:focus {
-    border-color: transparent;
-    background-color: transparent;
+    /*border-color: transparent;
+    background-color: transparent;*/
     box-shadow: none
 }
 
