@@ -9,6 +9,7 @@ html, body {
 
 /* Initial menu */
 .menu {
+  z-index: 9000;
   background: #2C2C2C; 
   left: -285px;  /* start off behind the scenes */
   height: 100%;
