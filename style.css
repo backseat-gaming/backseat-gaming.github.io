@@ -7,6 +7,11 @@ html, body {
     padding: 0; 
 }
 
+/** Bootstrap Overloads **/
+.col-md-4 {
+  margin: 0px -65px 0px 0px;
+}
+
 /* Initial menu */
 .menu {
   z-index: 9000;
