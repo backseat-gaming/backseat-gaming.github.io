@@ -1,4 +1,4 @@
-var main = function() {
+var main = function() {   
     $('.icon-menu').click(function() {
         $('.menu').animate({
             left: '0px'},
@@ -59,5 +59,9 @@ var main = function() {
         prevDot.addClass('active-dot');
     });
 };
+
+function hideSpinner() {
+    $('.spinner-loader').hide();
+}
 
 $(document).ready(main);
