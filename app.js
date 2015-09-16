@@ -60,8 +60,4 @@ var main = function() {
     });
 };
 
-function hideSpinner() {
-    $('.spinner-loader').hide();
-}
-
 $(document).ready(main);
