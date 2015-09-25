@@ -28,6 +28,9 @@ var main = function() {
         var currentSlide = $('.active-slide');
         var nextDot = currentDot.next();
         var nextSlide = currentSlide.next();
+
+        console.log(nextSlide.length);
+        console.log(nextSlide.next);
         
         if (nextSlide.length == 0) {
             nextSlide = $('.slide').first();

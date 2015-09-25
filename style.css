@@ -6,12 +6,6 @@ html, body {
 }
 
 /** Bootstrap Overloads **/
-.col-md-4 {
-  margin: 0px -65px 0px 0px;
-  position: relative;
-  left: 100px;
-}
-
 #jumboHeader {
     background-color: #E74E00; 
     position: relative; 
