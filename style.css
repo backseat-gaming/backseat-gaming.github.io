@@ -4,6 +4,20 @@ html, body {
     margin: 0; 
     padding: 0;
     background-image: url("imgs/smash_spinner.jpg");
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+/* Dynamic */
+
+.grow:hover
+{
+        -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+        transform: scale(1.7);
+        position: relative; top:-20px;
+        z-index: 9001;
 }
 
 /** Bootstrap Overloads **/
@@ -12,12 +26,28 @@ html, body {
     position: relative; 
     top: -35px; 
     padding: 25px 0px 80px 0px;
-    
+    max-height: 100px;
+}
+
+#jumboHeader img {
+    position: relative; 
+    top: -30px; 
+    width:925px; 
+    height:160px;
+}
+
+#menu {
+    position: relative; 
+    left: -5px; 
+    background-color: #E74E00; 
+    color:#FFF; 
+    text-transform: uppercase; 
+    font-weight: bold;
 }
 
 .col-md-2 {
     position: relative;
-    left: 170px;
+    left: 160px;
 }
 
 /* Initial menu */
@@ -114,7 +144,7 @@ html, body {
 }
 
 /* Screen smaller than px */
-@media (max-width: 1300px) { 
+@media (max-width: 1400px) { 
     .header li {
         display: inline;
         color: #31363d; 
@@ -125,7 +155,34 @@ html, body {
         top:120px; 
         left:0px;
     }
-
+    
+    #jumboHeader {
+            background-color: #E74E00; 
+            position: relative; 
+            top: -35px; 
+            padding: 0px 0px 80px 0px;
+            max-height: 100px;
+    }
+   
+    .col-md-2 {
+    position: relative;
+    left: 110px;
+}
+    
+    #main_video {
+        position: relative;
+        left: 30px;
+    }
+    
+    /* <!-- hide it --> */
+    #menu {
+        left: -600px; 
+        top: -60px;
+    }
+    
+    #chat {
+        display: none;
+    }
 } 
 
 /* Slide feature */
