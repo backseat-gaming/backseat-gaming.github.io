@@ -24,21 +24,22 @@
       setupCookie()
       checkCookie()
       /* Button Fun */
-      var text = $('#num').text();
+      var text = getCookie("votes");
        $('.plus').click(function() {
-         text = parseInt(Number(text, 10)) + 1;
+         var votes = getCookie("votes");
+         var text = votes + 1;
          document.getElementById("num").textContent=(text);
          setCookie("hasVoted", "true", 1)
          setCookie("votes", text, 1)
        });
        $('.minus').click(function() {
-         var text = $('#num').text();
+         var votes = getCookie("votes");
          // Don't allow <0 values
          if (text <= 0) {
            text = 0;
            document.getElementById("num").textContent=(text);
          }else{
-           text = parseInt(Number(text, 10)) - 1;
+           text = votes - 1;
            document.getElementById("num").textContent=(text);
            setCookie("hasVoted", "true", 1)
            setCookie("votes", text, 1)
