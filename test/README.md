@@ -22,15 +22,14 @@ This file uses JQuery to demonstrate a local voting feature using cookies that s
 * Does not take into account users switching to a different browser
 * The same user can vote multiple times ( Left this in so I can test clicking +|- a bunch during a single browser session)
 
-<br />
-<br />
+<br />  
 
 #**button_overylay.html**
 This file has the same functionality as button_example.html, only displayed on the site's page itself.
 
 **URL:** http://backseat-gaming.github.io/test/button_overlay.html
 
-***Depends***
+***Depends***  
 1. bo_app.js  
 2. bo_style.css  
 
