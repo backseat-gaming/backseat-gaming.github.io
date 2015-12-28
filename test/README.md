@@ -24,10 +24,8 @@ This file uses JQuery to demonstrate a local voting feature using cookies that s
 
 <br />
 <br />
-<br />
-<br />
 
-#**button_example.html**
+#**button_overylay.html**
 This file has the same functionality as button_example.html, only displayed on the site's page itself.
 
 **URL:** http://backseat-gaming.github.io/test/button_overlay.html
