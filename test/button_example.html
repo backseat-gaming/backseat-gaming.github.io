@@ -32,7 +32,7 @@
          setCookie("votes", text, 1)
        });
        $('.minus').click(function() {
-         text = parseInt(Number(text, 10)) - 1;
+         var text = $('#num').text();
          // Don't allow <0 values
          if (text <= 0) {
            text = 0;
