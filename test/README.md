@@ -9,7 +9,7 @@
 #####
 <br />
 
-<div>
+<div style="display: inline;">
   <h1 style="display: inline;">file:</h1><h2 style="display: inline;">button_example.html</h2>
   <ul>This file uses jquery to create local cookies and store user actions in them. "hasVoted and votes"
     <li>Doesn't allow users to result in negative vaule for votes</li>
