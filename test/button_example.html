@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Plus/Minus</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+      body {
+        padding-top:20px;
+        text-align:center;
+      }
+      button {
+        padding:1px 5px;
+      }
+      #num {
+        padding:5px 10px;
+        background-color:#000;
+        color:#F00;
+        border:1px solid #000;
+      }
+   </style>
+
+   <script>
+     $(document).ready(function() {
+       var text = $('#num').text();
+
+       $('.plus').click(function() {
+         text = parseInt(Number(text, 10)) + 1;
+         document.getElementById("num").textContent=(text);
+       });
+
+       $('.minus').click(function() {
+         text = parseInt(Number(text, 10)) - 1;
+         // Don't allow <0 values
+         if (text <= 0) {
+            text = 0;
+         }
+         document.getElementById("num").textContent=(text);
+       });
+     });
+   </script>
+
+</head>
+<body>
+   <!-- |+| # |-| -->
+   <button class="plus">+</button> 
+   <span id="num">0</span>
+   <button class="minus">-</button>
+</body>
+</html>
