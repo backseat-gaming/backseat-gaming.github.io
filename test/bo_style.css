@@ -1,0 +1,245 @@
+
+html, body {
+    background-color: #191919;  
+    margin: 0; 
+    padding: 0;
+    background-image: url("imgs/smash_spinner.jpg");
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+button {
+  padding:1px 5px;
+}
+#num {
+  padding:5px 10px;
+  background-color:#000;
+  color:#F00;
+  border:1px solid #000;
+  width: 100px;
+}
+
+/* Dynamic */
+
+.grow:hover
+{
+        -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+        transform: scale(1.7);
+        position: relative; top:-20px;
+        z-index: 9001;
+}
+
+/** Bootstrap Overloads **/
+#jumboHeader {
+    background-color: #E74E00; 
+    position: relative; 
+    top: -35px; 
+    padding: 25px 0px 80px 0px;
+    max-height: 100px;
+}
+
+#jumboHeader img {
+    position: relative; 
+    top: -30px; 
+    width:925px; 
+    height:160px;
+}
+
+#menu {
+    position: relative; 
+    left: -5px; 
+    background-color: #E74E00; 
+    color:#FFF; 
+    text-transform: uppercase; 
+    font-weight: bold;
+}
+
+.col-md-2 {
+    position: relative;
+    left: 160px;
+}
+
+/* Initial menu */
+.menu {
+  z-index: 9000;
+  background: #0C0C0C; 
+  left: -285px;  /* start off behind the scenes */
+  height: 100%;
+  position: fixed;
+  width: 285px;
+}
+
+.menu ul {
+  border-top: 1px solid #393939;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #393939;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 45px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-close {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.icon-menu {
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0px 50px 0px 0px;
+}
+
+.icon-menu i {
+  margin-right: 5px;
+}
+
+.header {
+    background-color:#000;
+    height: 140px;
+    text-align: center;
+    color: #000;
+} 
+
+.header li {
+    display: inline;
+    margin: 0 auto;
+    position: relative;
+    padding: 0px 0px 10px 30px;
+    text-transform: uppercase;
+    top:60px;
+    left:-600px;
+}
+
+.header h1 {
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    top:30px;
+}
+
+.footer {
+    color: #0C0C0C; 
+    font-size: 10px; 
+    height: 70px; 
+    line-height: 70px; 
+    padding-right: 40px; 
+    text-align: right; 
+    text-transform: uppercase; 
+    margin-bottom: 100px; 
+} 
+
+/* Screen bigger than px */
+@media (min-width: 1300px) {
+
+}
+
+/* Screen smaller than px */
+@media (max-width: 1400px) { 
+    .header li {
+        display: inline;
+        color: #31363d; 
+        margin: 0 auto; 
+        position: relative; 
+        padding: 0px 0px 10px 30px; 
+        text-transform: uppercase; 
+        top:120px; 
+        left:0px;
+    }
+    
+    #jumboHeader {
+            background-color: #E74E00; 
+            position: relative; 
+            top: -35px; 
+            padding: 0px 0px 80px 0px;
+            max-height: 100px;
+    }
+   
+    .col-md-2 {
+    position: relative;
+    left: 110px;
+}
+    
+    #main_video {
+        position: relative;
+        left: 30px;
+    }
+    
+    /* <!-- hide it --> */
+    #menu {
+        left: -600px; 
+        top: -60px;
+    }
+    
+    #chat {
+        display: none;
+    }
+} 
+
+/* Slide feature */
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.active-slide {
+    display: block;
+}
+
+.slider-nav {
+  text-align: center;
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #363636;
+}
