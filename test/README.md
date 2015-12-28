@@ -31,8 +31,8 @@ This file has the same functionality as button_example.html, only displayed on t
 **URL:** http://backseat-gaming.github.io/test/button_overlay.html
 
 ***Depends***
-1. bo_app.js
-2. bo_style.css
+1. bo_app.js  
+2. bo_style.css  
 
 **PROS:**
 * Retains values for a given browser on refresh, close/open ( LOCAL MACHINE ONLY )
