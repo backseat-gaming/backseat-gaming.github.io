@@ -39,3 +39,21 @@ This file has the same functionality as button_example.html, only displayed on t
 **CONS:**
 * Does not take into account other users votes
 * Does not take into account same user switching to a different browser
+
+<br />  
+
+#**button_overylay_middle.html**
+This file has the same functionality as button_overlay.html, only displayed in the middle of the site's page.
+
+**URL:** http://backseat-gaming.github.io/test/button_overlay_middle.html
+
+***Depends***  
+1. bo_app.js  
+2. bo_style.css  
+
+**PROS:**
+* Retains values for a given browser on refresh, close/open ( LOCAL MACHINE ONLY )
+
+**CONS:**
+* Does not take into account other users votes
+* Does not take into account same user switching to a different browser
