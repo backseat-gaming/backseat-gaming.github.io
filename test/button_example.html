@@ -24,22 +24,22 @@
       setupCookie()
       checkCookie()
       /* Button Fun */
-      var text = getCookie("votes");
-       $('.plus').click(function() {
-         var votes = getCookie("votes");
-         var text = votes + 1;
+      $('.plus').click(function() {
+         var text = getCookie("votes");
+         text = parseInt(text, 10) + 1;
          document.getElementById("num").textContent=(text);
          setCookie("hasVoted", "true", 1)
          setCookie("votes", text, 1)
        });
        $('.minus').click(function() {
-         var votes = getCookie("votes");
+         var text = getCookie("votes");
          // Don't allow <0 values
          if (text <= 0) {
            text = 0;
            document.getElementById("num").textContent=(text);
+           setCookie("votes", text, 1)
          }else{
-           text = votes - 1;
+           text = parseInt(text, 10) - 1;
            document.getElementById("num").textContent=(text);
            setCookie("hasVoted", "true", 1)
            setCookie("votes", text, 1)
@@ -74,6 +74,10 @@
         var votes=getCookie("votes");
         if (votes!="") {
           document.getElementById("num").textContent=(votes);
+        }else{
+         votes = 0;
+         document.getElementById("num").textContent=(votes);
+         setCookie("votes", votes, 1)
         }
       }
     });
