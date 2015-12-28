@@ -9,7 +9,9 @@
 #####
 
 #**button_example.html**
-This file uses jquery to create local cookies and store user actions in them. "hasVoted and votes"
+This file uses JQuery to demonstrate a local voting feature using cookies that store user actions in them. "hasVoted and votes"
+<br />
+**URL:** http://backseat-gaming.github.io/test/button_example.html
 
 **PROS:**
 Retains values for a given browser on refresh, close/open ( LOCAL MACHINE ONLY )
