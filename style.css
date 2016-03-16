@@ -139,51 +139,8 @@ html, body {
 } 
 
 /* Screen bigger than px */
-@media (min-width: 1300px) {
-
-}
 
 /* Screen smaller than px */
-@media (max-width: 1400px) { 
-    .header li {
-        display: inline;
-        color: #31363d; 
-        margin: 0 auto; 
-        position: relative; 
-        padding: 0px 0px 10px 30px; 
-        text-transform: uppercase; 
-        top:120px; 
-        left:0px;
-    }
-    
-    #jumboHeader {
-            background-color: #E74E00; 
-            position: relative; 
-            top: -35px; 
-            padding: 0px 0px 80px 0px;
-            max-height: 100px;
-    }
-   
-    .col-md-2 {
-    position: relative;
-    left: 110px;
-}
-    
-    #main_video {
-        position: relative;
-        left: 30px;
-    }
-    
-    /* <!-- hide it --> */
-    #menu {
-        left: -600px; 
-        top: -60px;
-    }
-    
-    #chat {
-        display: none;
-    }
-} 
 
 /* Slide feature */
 
